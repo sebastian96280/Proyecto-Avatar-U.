@@ -1,0 +1,95 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.home{
+	background-image: url(../view/fondo.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+header {
+	background-color: black; 
+	width: 100%;
+
+}
+header nav div h1{
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+/*contenedor del personaje y sus complementos*/	
+#contenedor {
+	display: flex;
+	width: 100%;
+}
+
+#contenedor .cajas {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	border-color: white;
+	border-style: solid;
+	padding: 2%;
+}
+/*primera caja* del contenedor*/
+#contenedor .cajas div img{
+	max-width: 60%;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: white;
+}
+#contenedor .nombreAvatar{
+	margin: 20% auto;
+}
+
+#contenedor .caracteristicas1{
+
+}
+#contenedor .caracteristicas2{
+
+}
+
+/*segunda caja del contenedor*/
+
+#contenedor .cajas .partes{
+}
+
+#contenedor .cajas .colores{
+
+}
+/*tercera caja del contenedor*/
+
+
+#contenedor .dataBase{
+
+}
+#contenedor .comment{
+
+}
+
+/*footer*/
+#pieDePagina {
+	display: inline-block;
+	display: flex;
+	width: 100%;
+}
+
+#pieDePagina div{
+	width: 100%;
+	text-align: center;
+	margin: 15px;
+	padding: 5px;
+}
+#pieDePagina div button{
+	background-color: white;
+	color:black;
+}
+#pieDePagina div button:hover{
+	background-color: black;
+	color:white;
+}
+
+
+
+
+

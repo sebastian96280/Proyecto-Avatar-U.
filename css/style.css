@@ -27,52 +27,58 @@ header nav div h1{
 	width: 100%;
 	text-align: center;
 	display: inline-block;
-	border-color: white;
-	border-style: solid;
+	/*border-color: white;
+	border-style: solid;*/
 	padding: 2%;
 }
 /*primera caja* del contenedor*/
+
 #contenedor .cajas div img{
 	max-width: 60%;
 	border-radius: 10px;
 	border-style: solid;
 	border-color: white;
-
 }
 #contenedor .nombreAvatar{
-	margin: 5% auto;
-	border-style: solid;
-	border-color: white;
+	margin: 5% ;
+/*	border-style: solid;
+	border-color: white;*/
 }
 
 #contenedor .caracteristicas1{
-	border-style: solid;
-	border-color: black;
-	padding:  5px;
+/*	border-style: solid;
+	border-color: black;*/
+	padding:  1%;
 	margin: 5%;
 }
 #contenedor .caracteristicas1 img{
-	float: top;
 	width: 15% ;
 	margin: 2px;
 }
-#contenedor .caracteristicas2{
-	border-style: solid;
+#contenedor .caracteristicas1 img:hover{
 	border-color: black;
-	padding: 5px;
+	background-color: #A69D9B;
+}
+#contenedor .caracteristicas2{
+/*	border-style: solid;
+	border-color: black;*/
+	padding: 1%;
 	margin: 5%;
 }
 #contenedor .caracteristicas2 img{
-	float: top;
 	width: 15% ;
 	margin: 2px;
+}
+#contenedor .caracteristicas2 img:hover{
+	border-color: black;
+	background-color: #A69D9B;
 }
 
 
 /*segunda caja del contenedor*/
 #contenedor .cajas .partes{
-	border-style: solid;
-	border-color:blue;
+	/*border-style: solid;
+	border-color:blue;*/
 	padding: 2%;	
 }
 
@@ -80,29 +86,34 @@ header nav div h1{
 	max-width: 25%;
 	border-radius: 25px;
 	border-style: solid;
-	border-color: red;	
+	border-color: white;	
 	margin: 5px;
+}
+#contenedor .cajas .partes img:hover{
+	background-color:black;
+	border-color: #A69D9B;
 }
 #contenedor .cajas .colores{
 	border-style: solid;
-	border-color:blue;
+	border-color:black;
 	padding: 2%;	
 }
 #contenedor .cajas .colores img{
+	border-style: none;
 	max-width: 10%;
 	border-radius: 2px;
-	border-style: solid;
-	border-color: red;	
 	margin: 5px;
-
 }
+#contenedor .cajas .colores img:hover{
+	background-color: yellow;
+}	
 /*tercera caja del contenedor*/
 
 
 #contenedor .dataBase{
 	border-style:solid;
-	border-color: red;
-	padding: 30px;
+	border-color: white;
+	padding: 5%;
 	
 }
 #contenedor .dataBase ul li{
@@ -113,8 +124,8 @@ header nav div h1{
 }
 #contenedor .comment{
 	border-style:solid;
-	border-color: red;
-	padding: 30px;
+	border-color:white;
+	padding: 10%;
 }
 
 /*footer*/
@@ -133,6 +144,10 @@ header nav div h1{
 #pieDePagina div button{
 	background-color: white;
 	color:black;
+	padding: 2%;
+	border-color: black;
+	border-style:solid;
+	border-radius: 15px; 
 }
 #pieDePagina div button:hover{
 	background-color: black;

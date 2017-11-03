@@ -1,0 +1,15 @@
+Options All -Indexes
+
+
+RewriteEngine on
+
+# View de Navegacion de las opciones CLiente
+
+Rewriterule ^partesO?$  modulos/partesOjos.html
+Rewriterule ^partesBo?$  modulos/partesBocas.html
+Rewriterule ^partesPe?$  modulos/partesPelo.html
+<files .htaccess>
+Order allow,deny
+Deny from all
+</files>
+

@@ -29,7 +29,7 @@ $(document).ready(function() {
     }
     function traerboca() {
         var request = "modulos/partesBocas.html";
-        var parametros = "A=1";
+        var parametros = "acceso=false";
         var ejecucion = function(datos) {
             $("#contenido").html(datos);
         };

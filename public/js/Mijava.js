@@ -32,6 +32,141 @@ $(document).ready(function() {
         var parametros = "acceso=false";
         var ejecucion = function(datos) {
             $("#contenido").html(datos);
+            $("#azul").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/azul.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#negro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/negro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#blanco").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/blanco.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#cafe").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/cafe.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#cafeoscuro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/cafeoscuro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#gris").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/gris.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#grisclaro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/grisclaro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#grisclaro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/grisclaro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#lila").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/lila.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#morado").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/morado.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#moradoclaro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/moradoclaro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#rosado").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/rosado.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#rojo").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/rojo.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#verde1").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/verde1.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#verde2").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/verde2.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
         };
         MIAjax(request, parametros, ejecucion);
     }
@@ -50,6 +185,141 @@ $(document).ready(function() {
         var parametros = "acceso=false";
         var ejecucion = function(datos) {
             document.getElementById("contenido").innerHTML = datos;
+            $("#azul").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/azul.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#negro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/negro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#blanco").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/blanco.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#cafe").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/cafe.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#cafeoscuro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/cafeoscuro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#gris").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/gris.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#grisclaro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/grisclaro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#grisclaro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/grisclaro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#lila").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/lila.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#morado").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/morado.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#moradoclaro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/moradoclaro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#rosado").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/rosado.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#rojo").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/rojo.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#verde1").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/verde1.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#verde2").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/bocas/verde2.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresBoca").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
         };
         MIAjax(request, parametros, ejecucion);
     });
@@ -58,8 +328,147 @@ $(document).ready(function() {
         var parametros = "acceso=false";
         var ejecucion = function(datos) {
             document.getElementById("contenido").innerHTML = datos;
+            $("#negro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/negro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#azul").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/azul.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#blanco").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/blanco.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#cafe").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/cafe.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#cafeoscuro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/cafeoscuro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#gris").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/gris.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#grisclaro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/grisclaro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#lila").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/lila.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#morado").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/morado.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#moradoclaro").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/moradoclaro.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#rosado").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/rosado.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#rojo").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/rojo.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#verde1").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/verde1.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
+            $("#verde2").click(function() {
+            console.log("estoy aqui")
+            var request = "modulos/Colores/pelo/verde2.html";
+            var parametros = "acceso=false";
+            var ejecucion = function(datos) {
+                document.getElementById("coloresPelo").innerHTML = datos;
+                };
+                MIAjax(request, parametros, ejecucion);
+            });
         };
         MIAjax(request, parametros, ejecucion);
     });
 
 });
+function inicioImagenB(id){
+    var imagen = document.getElementById(id).src;
+    document.getElementById("img3").src=imagen;
+}
+function inicioImagenO(id){
+    var imagen = document.getElementById(id).src;
+    document.getElementById("img2").src=imagen;
+}
+function inicioImagenP(id){
+    var imagen = document.getElementById(id).src;
+    document.getElementById("img4").src=imagen;
+}
+

@@ -1,198 +1,111 @@
-import  cherrypy,os
+import cherrypy
+import os
 
 
-class CreatuAvatar(object):
+class CreaTuAvatar(object):
     @cherrypy.expose
 
     def index(self):
-        html="""
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>CREA TU PROPIO AVATAR</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        return open('public/index.html')
 
-        <!--icono pestaña-->
-        <link rel="shortcut icon" type="image/x-icon" href="static/view/icono.ico">
-        <!--carrusel imagenes-->
-        <link rel="stylesheet" type="text/css" href="static/css/style.css">
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-        <script src="static/js/jquery.min.js" ></script>
-        <script src="static/js/bootstrap.min.js" ></script>
-        <script src="static/js/Mijava.js" ></script>
+    @cherrypy.expose
+    def guardaPersonaje(self,parametros=""):
 
+        # Como abrir un archivo (nombre, permiso)
+        archivo = open("archivo.csv", "a")
+        archivo.write("\n"+str(parametros))
+        archivo.close()
 
+    @cherrypy.expose
+    def crearListaPersonaje(self):
+        return open("archivo.csv")
 
-    </head>
-    <body class="home">
-        <header>
-            <nav>
-                <div>
-                    <h1>CREA TU PROPIO AVATAR</h1>
-                </div>
-            </nav>
-        </header>
-        <div id="contenedor">
-            <div class="cajas">
-                <div class="avatar">
-                    <img src="static/view/avatar/avatarSencilloxcf.png" id="img1" >
-                    <div id="">
-                        <img src="static/view/avatar/partesOjos/ojos09.png" id="img2" style="max-width:100%;">
-                        <img src="static/view/avatar/partesBoca/boca9.png" id="img3">
-                        <img src="static/view/avatar/partesPelo/pelo09.png" id="img4">
-                    </div>
+    @cherrypy.expose
+    def buscarPersonaje(self):
+        return open("archivo.csv")
 
-                </div>
-                <div class="nombreAvatar">
-                    <input type="text" name="Nombre del Avatar" placeholder="Nombre del Avatar">
-                </div>
-                <div class="caracteristicas1">
-                    <div id="myCarousel" class="carousel slide" >
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" ></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
+    """Servicio Web"""
+    @cherrypy.expose
+    def traerBocas (self):
+        return open('public/modulos/partesBocas.html')
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
+    @cherrypy.expose
+    def traerBocasAzul (self):
+        return open('public/modulos/Colores/bocas/azul.html')
 
-                            <div class="item active">
-                                <img src="static/view/control caracteristicas/pelo.png" alt="Los Angeles" id="Pelo" >
-                                <div class="carousel-caption">
+    @cherrypy.expose
+    def traerBocasNegro(self):
+        return open('public/modulos/Colores/bocas/negro.html')
 
-                                </div>
-                            </div>
+    @cherrypy.expose
+    def traerBocasBlanco(self):
+        return open('public/modulos/Colores/bocas/blanco.html')
 
-                            <div class="item">
-                                <img src="static/view/control caracteristicas/boca.png" alt="Chicago" id="Boca">
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="static/view/control caracteristicas/ojos.png" alt="New York" id="Ojos">
-                                <div class="carousel-caption">
-                                </div>
-                            </div> <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="caracteristicas2">
-                    <div id="myCarouse2" class="carousel slide" >
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarouse2" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarouse2" data-slide-to="1"></li>
-                            <li data-target="#myCarouse2" data-slide-to="2"></li>
-                        </ol>
+    @cherrypy.expose
+    def traerBocasCafe(self):
+        return open('public/modulos/Colores/bocas/cafe.html')
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" style="position: relative;">
+    @cherrypy.expose
+    def traerBocasCafeOscuro(self):
+        return open('public/modulos/Colores/bocas/cafeoscuro.html')
 
-                            <div class="item active" >
-                                <img src="static/view/control caracteristicas/pelo.png" alt="" >
-                            </div>
+    @cherrypy.expose
+    def traerBocasGris(self):
+        return open('public/modulos/Colores/bocas/gris.html')
 
-                            <div class="item">
-                                <!--href="javascript:void(0)" id="Ciudades1"-->
-                                <img src="static/view/control caracteristicas/cabeza.png" alt="" >
-                            </div>
+    @cherrypy.expose
+    def traerBocasGrisClaro(self):
+        return open('public/modulos/Colores/bocas/grisclaro.html')
 
-                            <div class="item">
-                                <img src="static/view/control caracteristicas/ojos.png" alt="" >
-                            </div>
+    @cherrypy.expose
+    def traerBocasLila(self):
+        return open('public/modulos/Colores/bocas/lila.html')
 
+    @cherrypy.expose
+    def traerBocasMorado(self):
+        return open('public/modulos/Colores/bocas/morado.html')
 
-                            <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#myCarouse2" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#myCarouse2" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    @cherrypy.expose
+    def traerBocasMoradoClaro(self):
+        return open('public/modulos/Colores/bocas/moradoclaro.html')
 
+    @cherrypy.expose
+    def traerBocasRosado(self):
+        return open('public/modulos/Colores/bocas/rosado.html')
 
-                <!--
-                            <div class="caracteristicas1">
-                                    <img src="view/control caracteristicas/flechaiz.png">
-                                    <img src="view/control caracteristicas/pelo.png">
-                                    <img src="view/avatar/boca.png">
-                                    <img src="view/control caracteristicas/ojos.png">
-                                    <img src="view/control caracteristicas/flechade.png" >
-                            </div>
-                            <div class="caracteristicas2">
-                                    <img src="view/control caracteristicas/flechaiz.png" >
-                                    <img src="view/control caracteristicas/cabeza.png">
-                                    <img src="view/control caracteristicas/torzo.png">
-                                    <img src="view/control caracteristicas/piernas.png">
-                                    <img src="view/control caracteristicas/flechade.png" >
-                            </div>-->
-            </div>
+    @cherrypy.expose
+    def traerBocasRojo(self):
+        return open('public/modulos/Colores/bocas/rojo.html')
 
+    @cherrypy.expose
+    def traerBocasVerde1(self):
+        return open('public/modulos/Colores/bocas/verde1.html')
 
-            <div class="cajas" id="contenido">
+    @cherrypy.expose
+    def traerBocasVerde2(self):
+        return open('public/modulos/Colores/bocas/verde2.html')
 
-            </div>
-            <div class="cajas">
-                <div class="dataBase">
-                    <h2>Avatar's Creados</h2>
-                    <ul>
-                        <li>luz</li>
-                        <li>jonathan</li>
-                        <li>jose</li>
-                        <li>Heidi</li>
-                        <li>lorena</li>
-                        <li>Ivon</li>
-                        <li>Miguel</li>
-                        <li>Sebastian</li>
-                        <li>Andres</li>
-                        <li>Jhoan</li>
+    @cherrypy.expose
+    def traerOjos(self):
+        return open('public/modulos/partesOjos.html')
 
-                    </ul>
-                </div>
-                <h2>comentarios</h2>
-                <div class="comment">
+    @cherrypy.expose
+    def traerPelo(self):
+        return open('public/modulos/partesPelo.html')
 
-                    <input type="text" name="comentario" placeholder="Deja un comentario">
-                </div>
-            </div>
-        </div>
+    @cherrypy.expose
+    def traerBocasVerde2(self):
+        return open('public/modulos/Colores/bocas/verde2.html')
 
-        <div id="pieDePagina">
-            <div>
-                <button>GUARDAR Y DESCARGAR</button>
-            </div>
-            <div>
-                <button>COMPARTIR</button>
-            </div>
-            <div>
-                <button>ENVIAR</button>
-            </div>
+    @cherrypy.expose
+    def traerBocasVerde2(self):
+        return open('public/modulos/Colores/bocas/verde2.html')
 
-        </div>
+    @cherrypy.expose
+    def traerBocasVerde2(self):
+        return open('public/modulos/Colores/bocas/verde2.html')
 
-    </body>
-</html>
-"""
-        return  html
+pagina = CreaTuAvatar()
 
 if __name__ == '__main__':
     conf = {
@@ -207,4 +120,4 @@ if __name__ == '__main__':
     }
     cherrypy.config.update({'server.socket_host': '127.0.0.1', })
     cherrypy.config.update({'server.socket_port': int(os.environ.get('PORT', '5000')), })
-    cherrypy.quickstart(CreatuAvatar(), '/', conf)
+    cherrypy.quickstart(pagina, '/', conf)
